@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Youtube Dl Downloader</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/photon.min.css">
+  <style>
+    .main-cotnent {
+      margin: 50px;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .active {
+      font-weight: bold;
+    }
+
+    .nav-group-item {
+      padding: 20px 10px 20px 25px;
+    }
+  </style>
+
+  <!-- Javascript -->
+  <script src="assets/js/menu.js" charset="utf-8"></script>
+  <script src="assets/js/custom.js"></script>
+</head>
+
+<body>
+  <div class="window">
+
+    <div class="window-content">
+      <div class="pane-group">
+        <div class="pane pane-sm sidebar">
+          <nav class="nav-group">
+            <h5 class="nav-group-title"></h5>
+            <span class="nav-group-item active" data-target="#home-page">
+                <span class="icon icon-download"></span> Downloads
+            </span>
+            <span class="nav-group-item" data-target="#settings-page">
+                <span class="icon icon-monitor"></span> Settings
+            </span>
+          </nav>
+        </div>
+        <div class="page pane" id="home-page">
+          <div class="padded-more">
+            <form id="download-form">
+              <div class="form-group">
+                <label>Youtube url</label>
+                <!-- https://www.youtube.com/watch?v=QohH89Eu5iM -->
+                <input type="url" id="url" class="form-control" placeholder="Youtube url" value="" required>
+
+              </div>
+              <div class="form-actions">
+                <button type="button" id="clear-btn" class="btn btn-form btn-default">Clear</button>
+                <button type="submit" id="get-quality-btn" class="btn btn-form btn-primary">OK</button>
+              </div>
+            </form>
+            <form class="hidden" id="quality-select-form">
+              <div class="form-group">
+                <label>Video Quality</label>
+                <select class="form-control" id="video-option" required></select>
+              </div>
+
+              <div class="form-group">
+                <label>Audio Quality</label>
+                <select class="form-control" id="audio-option" required></select>
+              </div>
+              <div class="form-actions">
+                <button type="submit" class="btn btn-form btn-primary">Download</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="page pane hidden" id="settings-page">
+          <div class="padded-more">
+            <span class="icon icon-folder"></span>
+            <input type="file" class="btn-default" id="store_file" webkitdirectory directory multiple>
+            <div class="text-bold" id="store_file_label"></div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>

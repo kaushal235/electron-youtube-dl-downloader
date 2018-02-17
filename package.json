@@ -1,0 +1,24 @@
+{
+  "name": "youtube-dl-downloader-electron",
+  "version": "1.0.0",
+  "description": "Youtube Dl Downloader",
+  "main": "app.js",
+  "author": "Kaushal",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "devDependencies": {
+    "electron-builder": "^20.0.5"
+  },
+  "build": {
+    "appId": "Youtube Dl Downloader",
+    "mac": {
+      "category": "your.app.category.type"
+    }
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}
