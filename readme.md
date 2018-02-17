@@ -16,7 +16,7 @@ Simple app based on electron to download Youtube video in user selected audio & 
  `yarn dist` or `npm dist`
 
 ### Screenshots
-![](Screenshots/Screenshot_1.png)
+![](screenshots/screenshot_1.png)
 
 
 ### TODO:
