@@ -1,5 +1,5 @@
 {
-  "name": "youtube-dl-downloader-electron",
+  "name": "electron-youtube-dl-downloader",
   "version": "1.0.0",
   "description": "Youtube Dl Downloader",
   "main": "app.js",
